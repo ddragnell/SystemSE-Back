@@ -1,7 +1,7 @@
 const utils = require('./utils');
 
 class VarianzaController {
-  constructor() { }
+  
 
   /**
   *

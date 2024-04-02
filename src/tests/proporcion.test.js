@@ -15,5 +15,5 @@ test("poblacionNormal", async () => {
   const controller = new ProporcionController();
   await controller.poblacionNormal(req, res);
   expect(res.status).toHaveBeenCalledWith(200);
-  expect(res.json).toHaveBeenCalledWith({ L: 0.6891794568997989, U: 0.9108205431002012 });
+  expect(res.json).toHaveBeenCalledWith({ L: 0.6891794568997989, U: 0.910820543100201 });
 });

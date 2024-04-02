@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --coverage",
     "dev": "nodemon index.js",
     "start": "node index.js"
+  },
+  "jest": {
+    "testResultsProcessor": "jest-sonar-reporter"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +19,7 @@
   },
   "devDependencies": {
     "jest": "^29.7.0",
+    "jest-sonar-reporter": "^2.0.0",
     "nodemon": "^3.0.1"
   }
 }

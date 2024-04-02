@@ -1,7 +1,6 @@
 const utils = require('./utils');
 
 class ProporcionController {
-  constructor() { }
 
   /**
   *
