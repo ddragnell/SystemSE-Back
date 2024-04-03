@@ -4,12 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage",
+    "test": "jest --coverage --config jest.config.js",
     "dev": "nodemon index.js",
     "start": "node index.js"
   },
   "jest": {
-    "testResultsProcessor": "jest-sonar-reporter"
+    "testEnvironment": "node"
   },
   "author": "",
   "license": "ISC",

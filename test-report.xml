@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\andre\OneDrive\Escritorio\systemse-backend\src\tests\proporcion.test.js">
-    <testCase name="poblacionNormal" duration="8">
-      <failure message="Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)"><![CDATA[Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)
-
-- Expected
-+ Received
-
-  Object {
-    "L": 0.6891794568997989,
--   "U": 0.910820543100201,
-+   "U": 0.9108205431002012,
-  },
-
-Number of calls: 1
-    at Object.toHaveBeenCalledWith (C:\Users\andre\OneDrive\Escritorio\systemse-backend\src\tests\proporcion.test.js:18:20)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-    </testCase>
-  </file>
   <file path="C:\Users\andre\OneDrive\Escritorio\systemse-backend\src\tests\media.test.js">
-    <testCase name="poblacionNormalVarianzaConocida" duration="1"/>
-    <testCase name="poblacionNormalVarianzaDesconocida" duration="4"/>
-    <testCase name="poblacionCualquieraVarianzaDesconocida" duration="0"/>
-    <testCase name="poblacionCualquieraVarianzaConocida" duration="0"/>
+    <testCase name="poblacionNormalVarianzaConocida" duration="8"/>
+    <testCase name="poblacionNormalVarianzaDesconocida" duration="9"/>
+    <testCase name="poblacionCualquieraVarianzaDesconocida" duration="1"/>
+    <testCase name="poblacionCualquieraVarianzaConocida" duration="1"/>
   </file>
   <file path="C:\Users\andre\OneDrive\Escritorio\systemse-backend\src\tests\varianza.test.js">
-    <testCase name="poblacionNormal" duration="4"/>
+    <testCase name="poblacionNormal" duration="6"/>
+  </file>
+  <file path="C:\Users\andre\OneDrive\Escritorio\systemse-backend\src\tests\proporcion.test.js">
+    <testCase name="poblacionNormal" duration="5"/>
   </file>
 </testExecutions>
