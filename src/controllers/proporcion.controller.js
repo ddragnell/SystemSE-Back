@@ -13,7 +13,7 @@ class ProporcionController {
 
       // Verificar que p, alpha y n son válidos
       if (p < 0 || alpha < 0 || alpha > 1 || n <= 0) {
-        throw new Error('Los valores de p, alpha y n deben ser positivos, alpha debe estar entre 0 y 1, y n debe ser mayor que 0');
+        return res.status(400).json({error: 'Los valores de p, alpha y n deben ser positivos, alpha debe estar entre 0 y 1, y n debe ser mayor que 0'});
       }
 
       const Z = utils.calcularValorZ(alpha / 2); // Se pasa el complemento porque la función calcula a cola izquierda

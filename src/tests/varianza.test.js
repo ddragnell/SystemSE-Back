@@ -32,6 +32,6 @@ test('alphaNegativa', async () => {
   };
   const controller = new VarianzaController();
   await controller.poblacionNormal(req, res);
-  expect(res.status).toHaveBeenCalledWith(500);
-  expect(res.json).toHaveBeenCalledWith({ L: null, U: null });
+  expect(res.status).toHaveBeenCalledWith(400);
+  expect(res.json).toHaveBeenCalledWith({error: 'Los valores de s, alpha y n no pueden ser negativos'  });
 });

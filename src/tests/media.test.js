@@ -91,6 +91,6 @@ test('poblacionNegativa', async () => {
   };
   const controller = new MediaController();
   await controller.poblacionCualquieraVarianzaConocida(req, res);
-  expect(res.status).toHaveBeenCalledWith(500);
-  expect(res.json).toHaveBeenCalledWith({ L: null, U: null });
+  expect(res.status).toHaveBeenCalledWith(400);
+  expect(res.json).toHaveBeenCalledWith({error: 'Los valores de X, alpha, sigma y n no pueden ser negativos'});
 });

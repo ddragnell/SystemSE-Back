@@ -11,6 +11,12 @@ class VarianzaController {
   async poblacionNormal(req, res) {
     try {
       const { s, alpha, n } = req.body;
+  
+      // Verificar que los valores no sean negativos
+      if (s < 0 || alpha < 0 || n < 0) {
+        return res.status(400).json({ error: 'Los valores de s, alpha y n no pueden ser negativos' });
+      }
+  
       const X2L = utils.calcularvalorX2(alpha / 2, n - 1);
       const X2U = utils.calcularvalorX2(1 - (alpha / 2), n - 1);
       const L = ((n - 1) * s**2) / X2L;
