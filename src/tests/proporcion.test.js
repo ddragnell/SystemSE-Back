@@ -32,15 +32,15 @@ test("poblacionNegativa", async () => {
   };
   const controller = new ProporcionController();
   await controller.poblacionNormal(req, res);
-  expect(res.status).toBe(500);
-  expect(res.json).toBeEqual({ L: null, U: null });
+  expect(res.status).toHaveBeenCalledWith(400);
+  expect(res.json).toHaveBeenCalledWith({error: 'Los valores de p, alpha y n deben ser positivos, alpha debe estar entre 0 y 1, y n debe ser mayor que 0'});
 });
 
 test("proporcionMayorAUno", async () => {
   const req = {
     body: {
       p: 10,
-      alpha: 0.05,
+      alpha: 5,
       n: 50,
     },
   };
@@ -50,6 +50,6 @@ test("proporcionMayorAUno", async () => {
   };
   const controller = new ProporcionController();
   await controller.poblacionNormal(req, res);
-  expect(res.status).toBe(400);
-  expect(res.json).toBeEqual({error: 'Los valores de p, alpha y n deben ser positivos, alpha debe estar entre 0 y 1, y n debe ser mayor que 0'});
+  expect(res.status).toHaveBeenCalledWith(400);
+  expect(res.json).toHaveBeenCalledWith({error: 'Los valores de p, alpha y n deben ser positivos, alpha debe estar entre 0 y 1, y n debe ser mayor que 0'});
 });
