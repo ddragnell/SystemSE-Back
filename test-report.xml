@@ -1,51 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
-  <file path="C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\media.test.js">
-    <testCase name="poblacionNormalVarianzaConocida" duration="29"/>
-    <testCase name="poblacionNormalVarianzaDesconocida" duration="15"/>
-    <testCase name="poblacionCualquieraVarianzaDesconocida" duration="2"/>
-    <testCase name="poblacionCualquieraVarianzaConocida" duration="3"/>
-    <testCase name="poblacionNegativa" duration="7">
-      <failure message="Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)"><![CDATA[Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)
-
-Expected: 500
-Received: 200
-
-Number of calls: 1
-    at Object.toHaveBeenCalledWith (C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\media.test.js:94:22)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-    </testCase>
-  </file>
   <file path="C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\proporcion.test.js">
-    <testCase name="poblacionNormal" duration="22"/>
-    <testCase name="poblacionNegativa" duration="4">
-      <failure message="Error: expect(received).toBe(expected) // Object.is equality"><![CDATA[Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: 500
-Received: [Function mockConstructor]
-    at Object.toBe (C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\proporcion.test.js:35:22)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-    </testCase>
-    <testCase name="proporcionMayorAUno" duration="1">
-      <failure message="Error: expect(received).toBe(expected) // Object.is equality"><![CDATA[Error: expect(received).toBe(expected) // Object.is equality
-
-Expected: 500
-Received: [Function mockConstructor]
-    at Object.toBe (C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\proporcion.test.js:53:22)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-    </testCase>
+    <testCase name="poblacionNormal" duration="19"/>
+    <testCase name="poblacionNegativa" duration="8"/>
+    <testCase name="proporcionMayorAUno" duration="1"/>
   </file>
   <file path="C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\varianza.test.js">
-    <testCase name="poblacionNormal" duration="36"/>
-    <testCase name="alphaNegativa" duration="2208">
-      <failure message="Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)"><![CDATA[Error: expect(jest.fn()).toHaveBeenCalledWith(...expected)
-
-Expected: 500
-Received: 200
-
-Number of calls: 1
-    at Object.toHaveBeenCalledWith (C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\varianza.test.js:35:22)
-    at processTicksAndRejections (node:internal/process/task_queues:95:5)]]></failure>
-    </testCase>
+    <testCase name="poblacionNormal" duration="31"/>
+    <testCase name="alphaNegativa" duration="9"/>
+  </file>
+  <file path="C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\media.test.js">
+    <testCase name="poblacionNormalVarianzaConocida" duration="23"/>
+    <testCase name="poblacionNormalVarianzaDesconocida" duration="10"/>
+    <testCase name="poblacionCualquieraVarianzaDesconocida" duration="3"/>
+    <testCase name="poblacionCualquieraVarianzaConocida" duration="2"/>
+    <testCase name="poblacionNegativa" duration="2"/>
   </file>
 </testExecutions>

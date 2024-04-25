@@ -1,6 +1,7 @@
 "use strict";
 const routes = require('./src/routes/index');
 const express = require('express');
+const connectDB = require('./database');
 const app = express();
 
 app.use(express.json());
@@ -18,5 +19,8 @@ app.use((req, res, next) => {
 
 // Configurar rutas
 app.use("/api", routes);
+
+// Conectar Database
+connectDB();
 
 module.exports = app;
