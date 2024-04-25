@@ -16,10 +16,10 @@ class EmailController {
             return res.status(400).json({ error: 'Los campos nombre y email son obligatorios' });
           }
       
-          // Create a new contact
+          // Crear el objeto
           const contact = new Contact({ nombre, email });
       
-          // Save the contact to the database
+          //Guardarlo en la BD
           const result = await contact.save();
       
           res.status(200).json(result);
