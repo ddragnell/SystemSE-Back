@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testExecutions version="1">
   <file path="C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\varianza.test.js">
-    <testCase name="poblacionNormal" duration="20"/>
+    <testCase name="poblacionNormal" duration="34"/>
     <testCase name="alphaNegativa" duration="1"/>
   </file>
   <file path="C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\proporcion.test.js">
-    <testCase name="poblacionNormal" duration="20"/>
+    <testCase name="poblacionNormal" duration="23"/>
     <testCase name="poblacionNegativa" duration="1"/>
     <testCase name="proporcionMayorAUno" duration="1"/>
   </file>
   <file path="C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\media.test.js">
-    <testCase name="poblacionNormalVarianzaConocida" duration="18"/>
-    <testCase name="poblacionNormalVarianzaDesconocida" duration="6"/>
+    <testCase name="poblacionNormalVarianzaConocida" duration="17"/>
+    <testCase name="poblacionNormalVarianzaDesconocida" duration="14"/>
     <testCase name="poblacionCualquieraVarianzaDesconocida" duration="1"/>
     <testCase name="poblacionCualquieraVarianzaConocida" duration="1"/>
     <testCase name="poblacionNegativa" duration="1"/>
   </file>
   <file path="C:\Users\jeron\OneDrive\Escritorio\systemse\SystemSE-Back\src\tests\email.test.js">
-    <testCase name="EmailController createEmail deberia crear un nuevo contacto y retornar status 200" duration="19"/>
+    <testCase name="EmailController createEmail deberia crear un nuevo contacto y retornar status 200" duration="23"/>
   </file>
 </testExecutions>

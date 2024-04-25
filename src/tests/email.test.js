@@ -23,17 +23,19 @@ describe("EmailController", () => {
       });
 
       //Crear mocks para req y res
+      //Arrange
       const req = httpMocks.createRequest({
         body: { nombre: "Test", email: "test@example.com" },
       });
       const res = httpMocks.createResponse();
-
+      
+      //Act
       const emailController = new EmailController();
       await emailController.createEmail(req, res);
 
       // Verifica que el método status fue llamado con el código 200
       expect(res.statusCode).toBe(200);
-
+      //Asserts
       // Verifica que el método json del objeto res fue llamado con el contacto correcto
       expect(res._getJSONData()).toEqual({
         nombre: "Test",
