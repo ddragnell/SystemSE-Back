@@ -1,4 +1,5 @@
 const  client  = require('../../database');
+const Contact = require('../models/Contact');
 
 class EmailController {
 
@@ -10,20 +11,22 @@ class EmailController {
 
     async createEmail(req, res) {
         try {
-            const { nombre, email } = req.body
-            if (nombre == null || email == null) {
-                return res.status(400).json({ error: 'Los campos nombre y email son obligatorios' })
-            }
-
-            const collection = client.db('systemse').collection('contacts');
-
-            const result = await collection.insertOne({ nombre, email });
-
-            res.status(200).json(result.ops[0]);
+          const { nombre, email } = req.body;
+          if (nombre == null || email == null) {
+            return res.status(400).json({ error: 'Los campos nombre y email son obligatorios' });
+          }
+      
+          // Create a new contact
+          const contact = new Contact({ nombre, email });
+      
+          // Save the contact to the database
+          const result = await contact.save();
+      
+          res.status(200).json(result);
         } catch (error) {
-            console.log(error);
-            res.status(500).json(error);
+          console.log(error);
+          res.status(500).json(error);
         }
-    }
+      }
 }
 module.exports = EmailController;
