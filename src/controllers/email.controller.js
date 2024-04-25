@@ -1,4 +1,4 @@
-const client = require('.../database');
+const  client  = require('../../database');
 
 class EmailController {
 
@@ -22,7 +22,7 @@ class EmailController {
             res.status(200).json(result.ops[0]);
         } catch (error) {
             console.log(error);
-            res.status(500).json(null);
+            res.status(500).json(error);
         }
     }
 }
